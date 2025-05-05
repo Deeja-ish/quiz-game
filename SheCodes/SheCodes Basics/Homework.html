@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body{
+            text-align: center;
+            font-weight: 200;
+        }
+        button{
+            color: white;
+            background: blue;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 40px;
+            border: 5px solid blue;
+        }
+        button:hover{
+            color: blue;
+            background: white;
+            border: 3px solid blue;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+        }
+        h2{
+            color: blue;
+        }
+        .day{
+            padding: 5px;
+        }
+        .day:hover{
+            background-color: bisque;
+            margin: 0 500px;
+            cursor: pointer;
+
+        }
+        .tokyo{
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+          <h2 class="tokyo">⛅
+            <br>  Currently 21° in Tokyo
+            </h2>
+            <p class="tokyo">
+            13° / <strong>23°</strong>
+            </p>
+    </div>
+    <div class="day">
+        <h3>🌧️Tomorrow</h3>
+        <p>
+        10° / <strong> 22° </strong>
+        </p>
+    </div>
+    <div class="day">
+        <h3>
+            🌥️Saturday
+        </h3>
+        <p>15° / <strong>
+            17°
+        </strong></p>
+    </div>
+    <div class="day">
+        <h3>
+           ☀️ Sunday
+        </h3>
+        <p>25° / <strong>
+            20°
+        </strong></p>
+    </div>
+    <button>
+        Change city
+    </button>
+</body>
+</html>

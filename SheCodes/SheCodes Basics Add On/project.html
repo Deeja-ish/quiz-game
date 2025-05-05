@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Favorite hobby</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
+        }
+        .container{
+            background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin:0 auto;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            font-size: 20px;
+            transition: all 150ms ease-in-out;
+
+        }
+        button:hover{
+            background-color: plum;
+            cursor: pointer;
+        }
+        img{
+            transition: all 100ms ease-in;
+            max-width: 100%;
+        }
+        img:hover{
+            transform: scale(2);
+
+        }
+        .dark{
+            background-color: black;
+            color: white;
+            font-size: small;
+        }
+        .dark:hover{
+            background-color: white;
+            color:black;
+        }
+        footer{
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+
+        }
+        a{            
+            color: plum;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .reading_intro{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+            width: 600px;
+        }
+        .reading_intro:hover{
+            transform: scale(1.3);
+            filter: contrast(80%);
+
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: 15px 0;
+            grid-gap: 10px;
+        }
+        .grid img{
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        p{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .dark_theme{
+            background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+            color: white;
+        }
+        .dark_theme .container{
+            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+        }
+    </style>
+</head>
+<body >
+    <button class="dark">
+        Change Theme
+    </button>
+    <div class="container">
+    <h1> 📖 Reading</h1>
+    <h2>
+        My Favorite Hobby
+    </h2>
+    <a href="https://en.wikipedia.org/wiki/Reading" target="_blank">
+     <img src="data:image/jpeg;base64,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" alt="" class="reading_intro">
+    </a>
+    <div class="grid">
+     <img src="https://media.istockphoto.com/id/610771088/photo/smiling-and-cheerful-schoolgirls-reading-a-book-together-at-school.jpg?s=612x612&w=is&k=20&c=zDq1IsMRk8YDwe55TRn62ZmI_i8CegcBrKShoyS2BUs=" alt="">
+     <img src="https://media.istockphoto.com/id/2096525904/photo/female-primary-or-elementary-school-teacher-reads-story-to-multi-cultural-class-seated-in.jpg?s=612x612&w=0&k=20&c=1jwsoHzBHNiJiadurjgkm5iKqG1tlAi3DK0UfaVQnzs=" alt="">
+     <img src="https://media.istockphoto.com/id/1384332902/photo/focused-young-woman.jpg?s=612x612&w=0&k=20&c=I67XpS-LTTxNtwjxW9bqaKGoGP4GBxQMVWop5qb--XM="alt="">
+     <img src="https://media.istockphoto.com/id/1403738312/photo/girl-in-casuals-with-backpack-leaning-bookshelf-in-library-student-reading-a-book-while.jpg?s=612x612&w=0&k=20&c=SB0h_NIigVoJCv691iT2HECJKH37aAm61BnnjEoW2jM=" alt="">
+    </div>
+    <p>
+        Reading is the process of taking in the sense or meaning of symbols, 
+        often specifically those of a written language, by means of sight or touch.
+        Reading is the process of looking at a series of written symbols and getting meaning from them. 
+        When we read, we use our eyes to receive written symbols (letters, punctuation marks and spaces) 
+        and we use our brain to convert them into words, 
+        sentences and paragraphs that communicate something to us.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Reading" target="_blank">Click here to learn more</a>
+    <button id="book">Click Here To Join My Book Club</button>
+    </div>
+</body>
+<footer>
+    Coded by Khadija Goni
+</footer>
+<script>
+    function changeColour(){
+        let body = document.querySelector("body")
+        if(body.classList.contains("dark_theme")){
+            body.classList.remove("dark_theme")
+        }else{
+            body.classList.add("dark_theme")
+        }
+    }
+        document.querySelector(".dark").addEventListener("click", changeColour)
+
+        function joinBookClub(){
+            let name = prompt("Enter your Full Name:")
+            alert("Hello " + name + ", Welcome to Khadija's Book Club")
+        }
+        document.querySelector("#book").addEventListener("click", joinBookClub)
+</script>
+</html>
